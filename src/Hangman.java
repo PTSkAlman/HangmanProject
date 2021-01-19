@@ -7,7 +7,22 @@ import java.util.Scanner;
 public class Hangman {
     public static void main(String[] args) {
         String word = pickRandomWord();
-        System.out.println(word);
+        System.out.println(letterCount());
+    }
+
+    private static String letterCount() {
+        int letterAmount = pickRandomWord().length();
+        String wordViewer = "";
+        int findSpace = pickRandomWord().indexOf(" ");
+        for (int i = 0 ; i < letterAmount ; i++) {
+            if (findSpace == i) {
+                wordViewer += " ";
+                findSpace = pickRandomWord().indexOf(" ",++findSpace);
+            } else {
+                wordViewer += "_";
+            }
+        }
+        return wordViewer;
     }
 
     private static String pickRandomWord() {
