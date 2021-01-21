@@ -35,7 +35,7 @@ public class Hangman {
         }
     }
 
-    private static String letterCount() {
+    private static char[] letterCount() {
         int letterAmount = pickRandomWord().length();
         String wordViewer = "";
         int findSpace = pickRandomWord().indexOf(" ");
@@ -47,7 +47,7 @@ public class Hangman {
                 wordViewer += "_";
             }
         }
-        return wordViewer;
+        return wordViewer.toCharArray();
     }
 
     private static String pickRandomWord() {
