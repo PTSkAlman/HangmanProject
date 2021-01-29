@@ -10,3 +10,7 @@ Jag måste fortsätta med gissningsmetoden  lista ut hur jag ska breaka loopen o
 Jag började att skriva om gissningsmetoden för att den gamla fungerade inte och den var svår att läsa.
 Jag har samma problem som i förra metoden att kunna identifiera hur många gånger bokstaven förekommer och på vilken index
 Jag ska fixa med en annan metod som läser in om en bokstav finns och hur många gånger och vilken index
+2021-01-29
+Jag har lagt in två nya metoder en som går igenom det slumpmässiga ordet och kollar om den bokstav som har skrivits in finns med och vilken index den har. Och en annan som konverterar första bokstaven i det gissade 'ordet' till en char.
+Jag har lite problem med att byta ut en char från en int array ifall att det finns flera bokstäver i samma ord.
+Jag måste byta ut när en rätt bokstav gissas och spara fel gissade bokstäver och komma ihåg så man inte kan skriva samma bokstav flera gånger.
